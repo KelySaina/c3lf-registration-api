@@ -77,7 +77,7 @@ const main = async () => {
 
       await prisma.members.update({
         where: { matricule: matricule },
-        data: { imgUrl: `http://localhost:${PORT}${uploadPath}` }
+        data: { imgUrl: `${process.env.BASE_URL}${uploadPath}` }
       });
 
       res.json({url: imagePath})

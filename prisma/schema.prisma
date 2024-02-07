@@ -20,5 +20,5 @@ model Members {
 
 model Admin{
   id          Int      @id @default(autoincrement())
-  AdminToken  String
+  AdminToken  Stringre
 }
